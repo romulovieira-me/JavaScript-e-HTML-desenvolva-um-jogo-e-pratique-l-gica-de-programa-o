@@ -1,0 +1,39 @@
+<!--convertendo texto em número -->
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function exibe(frase) {
+        
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var vitorias = parseInt(prompt("Digite o número de vitórias do seu time: "));
+    var empates = parseInt(prompt("Digite o número de empates do seu time: "));
+
+    var pontuacao = (vitorias * 3) + empates;
+
+    exibe("A pontuação do seu time é: " + pontuacao);
+
+    if (pontuacao > 25) {
+        exibe("A pontuação do time é melhor que no ano passado.");
+    }
+
+    if (pontuacao == 25) {
+        exibe("A pontuação do time é igual no ano passado.");
+    }
+    
+    if (pontuacao < 25) {
+        exibe("A pontuação do time é pior que no ano passado");
+    }
+    
+
+
+</script>

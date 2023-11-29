@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+
+    // função
+    function jumpLine() {
+
+        document.write("<br");
+        
+    }
+    // declarando variável
+    var ano = 2023;
+    var pulaLinha = "<br>";
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br><br>"); // pula duas linhas
+    document.write("João tem " + (ano - 2000) + " anos");
+
+    // reatribuindo valor da variável
+    ano = 2024;
+
+    jumpLine(); // chamando função
+    document.write("Fábio tem " + (ano - 2000) + " anos");
+    document.write(pulaLinha);
+
+    // elementos matemáticos 
+    var idadeFlavio = 46;
+    var idadeJoao = 23;
+    var idadeFabio = 24;
+
+    var media = (idadeFlavio + idadeJoao + idadeFabio)/3;
+    document.write("A média arredonda é: " + Math.round(media));
+</script>

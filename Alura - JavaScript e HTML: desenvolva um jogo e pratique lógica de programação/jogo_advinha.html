@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+    // função que salta linha
+    function pulaLinha () {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    // função que exibe mensagem
+    function exibe(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numeroPensado = Math.round(Math.random() * 10);
+    console.log(numeroPensado);
+    
+    var palpite = parseInt(prompt("Digite seu palpite entre 0 e 10: "));
+
+    if (palpite == numeroPensado) {
+       document.write("Você ganhou!!!");
+    } else {
+        document.write("Você perdeu :/");
+        pulaLinha();
+        document.write("O número pensado foi " + numeroPensado);
+    }
+
+    </script>

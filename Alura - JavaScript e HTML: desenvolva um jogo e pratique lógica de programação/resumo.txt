@@ -1,0 +1,55 @@
+* HTML é estático 
+* Não consegue capturar dados do usuário 
+
+* Apesar da maneira como é escrito, o HTML não é uma linguagem de programação propriamente dita. 
+Inclusive, veja que em seu nome (Hyper Text Markup Language) não há a presença da palavra "programming". 
+O HTML foi criado apenas para apresentar informações, isto é, sem dinamismo.
+
+* Uso do ponto e vírgula no final de uma instrução JavaScript é opcional e neste treinamento não teremos problemas com sua ausência. 
+Contudo, ao avançar nesta linguagem você verá determinados processamentos de código podem resultar em algo não esperado na ausência do ponto e vírgula. 
+Sendo assim, vamos criar desde já o hábito de terminar uma instrução com o ponto e vírgula.
+
+* A vantagem de usar conteúdo HTML dentro do JavaScript é atribuir dinamicidade ao conteúdo
+- Aceita string, int, float, operações matemáticas, concatenação e afins.
+
+alert("isso será exibido para o usuário");
+alert = instrução 
+"isso será exibido para o usuário" = parâmetro 
+
+* Observe a instrução document.write que recebe entre () o texto: "Estou escrevendo do mundo JavaScript no mundo HTML". 
+Quando usamos document.write, dentro de script, estamos, na verdade, escrevendo no mundo HTML, ou seja, o que veremos é um resultado HTML.
+
+* Na matemática, operações de divisão e multiplicação são realizadas primeiro. 
+O mesmo ocorre no universo da programação e esse fenômeno denomina-se Precedência entre operadores! 
+
+* Quando usamos document.write para escrever no mundo HTML, ele não vai pular linha por padrão. 
+Para isso, precisamos escrever no mundo HTML um <br>.
+
+* Veja que estamos usando o operador de soma envolvendo dois textos, ou melhor, duas strings. 
+Nesse caso, o JavaScript irá concatenar, ou seja, juntar o texto antes do + com o que vier depois. 
+Por isso o resultado final é "182" que será passado para document.write como parâmetro. 
+É bom lembrar que primeiro o JavaScript avalia a operação antes de passar para o () da instrução. 
+
+
+==== Variáveis ====
+* Compilador interpreta o código linha por linha
+* a linguagem JavaScript é case sensitive, ou seja, consegue perceber a diferença entre letras maiúsculas e minúsculas.
+* Só usa "var" para declarar a variável pela primeira vez. Portanto, para reatribuir valor, isso não é necessário.
+- Sempre que declarar uma nova variável é necessário inserir "var"
+
+==== Função =====
+* Precisam ser declaradas usando a palavra especial function.
+* Toda função possui um bloco, que é caracterizado pelo uso de { e }. 
+* Nenhuma, uma ou mais instruções podem ficar dentro do bloco de uma função.
+* Veja que funções são mais do que um conjunto de instruções que podemos chamar a qualquer momento, 
+elas permitem melhorar a legibilidade do código escondendo sua complexidade. 
+* nada é lido pelo programa após a linha do return
+
+* Se quisermos exibir um pop-up, que mostre uma pergunta e permita ao usuário entrar com um valor, 
+fazemos uso da função prompt.
+* A função prompt retorna a entrada que o usuário digitou.
+* A função prompt recebe como parâmetro o texto que será exibido para usuário, solicitando a entrada de dados. 
+E retorna a entrada que o usuário digitou.
+* Sempre retorna a entrada como texto
+
+*parseInt converte texto em número 

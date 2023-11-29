@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+    // função que salta linha
+    function pulaLinha () {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    // função que exibe mensagem
+    function exibe(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var peso = parseFloat(prompt("Digite o peso: "));
+    var altura = parseFloat(prompt("Digite a altura: "));
+
+    var imc = peso / (altura * altura);
+    
+
+    exibe("O IMC da Pessoa é: " + imc);
+
+    if (imc < 18.5) {
+        exibe("A pessoa está abaixo do recomendado.");
+    }
+
+    if (imc > 25) {
+        exibe("A pessoa está acima do recomendado.");
+    }
+
+    if (imc >= 18.5 && imc <= 25) {
+        exibe("A pessoa está nos níveis recomendados.");
+    }
+    
+
+</script>

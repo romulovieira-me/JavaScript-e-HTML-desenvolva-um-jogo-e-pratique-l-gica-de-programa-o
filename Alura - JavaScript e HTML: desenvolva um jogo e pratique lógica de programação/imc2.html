@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+    // função que salta linha
+    function pulaLinha () {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    // função que exibe mensagem
+    function exibe(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    // função para calcular IMC
+    function calculaImc(peso, altura) {
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+
+    var imcPessoa1 = calculaImc(65, 1.75);
+    var imcPessoa2 = calculaImc(50, 1.50);
+
+    exibe("O IMC da Pessoa 1 é: " + imcPessoa1);
+    exibe("O IMC da Pessoa 2 é: " + imcPessoa2);
+
+</script>
